@@ -31,5 +31,11 @@ router.get(
   check.checkUser,
   haderTaskController.getAllTask
 );
+router.get(
+  "/getOneTask",
+  // check.checkUser,
+  formData,
+  haderTaskController.getOneTask
+);
 
 module.exports = router;

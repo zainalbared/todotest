@@ -30,6 +30,26 @@ exports.addTask = async (req, res) => {
       });
   }
 };
+exports.getOneTask = (req, res, next) => {
+  const idToDo = req.body.idToDo;
+
+  toDo
+    .findByPk(idToDo, {
+      attributes: [
+        "id",
+        "nameTask",
+        "haderTask",
+        "bodyTask",
+        "startDate",
+        "endDate",
+      ],
+    })
+    .then((result) => {
+      res.status(200).send({ message: "Get successful", result: result });
+    })
+
+    .catch((err) => res.status(400).send({ error: err }));
+};
 
 exports.updateTask = (req, res) => {
   console.log(req.body);
