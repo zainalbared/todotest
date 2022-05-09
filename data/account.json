@@ -1,0 +1,28 @@
+{"account" : [ 
+    {
+        "userName": "zain1@gmail.som",
+        "password":"2345678",
+        "UserId":1
+    },
+    {
+        "userName": "zain2@gmail.som",
+        "password":"2345678",
+        "UserId":2
+    },
+    {
+        "userName": "zain3@gmail.som",
+        "password":"2345678",
+        "UserId":3
+    },
+    {
+        "userName": "zain4@gmail.som",
+        "password":"2345678",
+        "UserId":4
+    },
+    {
+        "userName": "zain5@gmail.som",
+        "password":"2345678",
+        "UserId":5
+    }
+                                                                                           
+    ]}
